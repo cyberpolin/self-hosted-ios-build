@@ -25,10 +25,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo pwd,
+          echo exec pwd,
           echo ls,
-          echo test, and deploy your project.
+          exec ./.github/scripts/build.sh
+        
+
       # Runs a single command using the runners shell
       # - name: Run a one-line script
-      #   run: exec ../.github/scripts/build.sh
 
