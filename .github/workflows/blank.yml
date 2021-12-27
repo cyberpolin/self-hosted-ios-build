@@ -23,7 +23,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Archive the app
+        run: exec sudo bash .github/scripts/archive.sh
+      - name: build app
         run: exec sudo bash .github/scripts/build.sh
         
 
