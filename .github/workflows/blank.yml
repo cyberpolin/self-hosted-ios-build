@@ -27,7 +27,7 @@ jobs:
         run: |
           echo exec pwd,
           echo ls,
-          exec ./.github/scripts/build.sh
+          exec sudo ./.github/scripts/build.sh
         
 
       # Runs a single command using the runners shell
