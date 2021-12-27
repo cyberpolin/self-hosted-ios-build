@@ -24,7 +24,7 @@ jobs:
     steps:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: exec ./.github/scripts/build.sh
+        run: exec sudo ./.github/scripts/build.sh
       # Runs a single command using the runners shell
       # - name: Run a one-line script
       #   run: exec ../.github/scripts/build.sh
